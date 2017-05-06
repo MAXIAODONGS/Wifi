@@ -15,6 +15,10 @@ import mxd.bdqn.com.wifi.model.User;
 public class Load {
 
     public static void login(Context context, String name) {
+        name(context, name);
+    }
+
+    private static void name(Context context, String name) {
         SharedPreferences uers = context.getSharedPreferences("login", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = uers.edit();
         editor.clear();
