@@ -1,0 +1,147 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DCDCDC"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/scrollview_header">
+
+            <mxd.bdqn.com.wifi.view.CircleImageView
+                android:id="@+id/image_view"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_head"
+                app:civ_border_color="@android:color/black"
+                app:civ_border_width="1dp" />
+
+
+            <TextView
+                android:id="@+id/text_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_view"
+                android:layout_centerHorizontal="true"
+                android:text="登录/注册"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            >
+
+
+            <mxd.bdqn.com.wifi.view.ItemView
+                android:id="@+id/location_s"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_vertical_margin"
+                android:background="@drawable/on_click_item"
+                app:is_driver="true"
+                app:left_img_src="@drawable/icon_feedback"
+                app:left_text="签到"
+                app:right_img_src="@drawable/icon_next" />
+
+            <mxd.bdqn.com.wifi.view.ItemView
+                android:id="@+id/money"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_vertical_margin"
+                android:background="@drawable/on_click_item"
+                app:is_driver="true"
+                app:left_img_src="@drawable/icon_pay_big"
+                app:left_text="钱包"
+                app:right_img_src="@drawable/icon_next" />
+
+            <mxd.bdqn.com.wifi.view.ItemView
+                android:id="@+id/my_info"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_vertical_margin"
+                android:background="@drawable/on_click_item"
+                app:is_driver="true"
+                app:left_img_src="@drawable/icon_order"
+                app:left_text="我的信息"
+                app:right_img_src="@drawable/icon_next" />
+
+            <mxd.bdqn.com.wifi.view.ItemView
+                android:id="@+id/version"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_vertical_margin"
+                android:background="@drawable/on_click_item"
+                app:is_driver="true"
+                app:left_img_src="@drawable/icon_order"
+                app:left_text="版本更新"
+                app:right_img_src="@drawable/icon_next" />
+
+            <mxd.bdqn.com.wifi.view.ItemView
+                android:id="@+id/my_shou"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_vertical_margin"
+                android:background="@drawable/on_click_item"
+                app:is_driver="true"
+                app:left_img_src="@drawable/icon_like_mine"
+                app:left_text="我的收藏"
+                app:right_img_src="@drawable/icon_next" />
+
+            <mxd.bdqn.com.wifi.view.ItemView
+                android:id="@+id/my_talk"
+                android:layout_width="match_parent"
+
+                android:layout_height="@dimen/item_vertical_margin"
+                android:background="@drawable/on_click_item"
+                app:left_img_src="@drawable/icon_like_mine"
+                app:left_text="我的论坛"
+                app:is_driver="true"
+                app:right_img_src="@drawable/icon_next" />
+            <mxd.bdqn.com.wifi.view.ItemView
+                android:id="@+id/my_run"
+                android:layout_width="match_parent"
+
+                android:layout_height="@dimen/item_vertical_margin"
+                android:background="@drawable/on_click_item"
+                app:left_img_src="@drawable/icon_like_mine"
+                app:left_text="我的跑腿"
+                app:right_img_src="@drawable/icon_next" />
+
+            <mxd.bdqn.com.wifi.view.ItemView
+                android:id="@+id/call_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_vertical_margin"
+
+                android:layout_marginTop="10dp"
+                android:background="@drawable/on_click_item"
+                app:left_img_src="@drawable/icon_service"
+                app:left_text="联系客服"
+
+                app:right_img_src="@drawable/icon_next" />
+
+            <mxd.bdqn.com.wifi.view.ItemView
+                android:id="@+id/back_s"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_vertical_margin"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/on_click_item"
+                app:left_img_src="@drawable/icon_more"
+                app:left_text="退出"
+                app:right_img_src="@drawable/icon_next" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

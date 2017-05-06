@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/on_click_item">
+
+
+    <FrameLayout
+        android:id="@+id/layout_left_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        />
+
+    <FrameLayout
+        android:id="@+id/layout_right_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/layout_right_container"
+        android:layout_toRightOf="@id/layout_left_container">
+
+        <TextView
+            android:id="@+id/tv_comm_left_title"
+            style="@style/Items"
+            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/tv_comm_right_desc"
+            style="@style/Items"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_driver"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray"
+        android:visibility="gone" />
+
+</RelativeLayout>

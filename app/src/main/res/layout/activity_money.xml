@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_money"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mxd.bdqn.com.wifi.MoneyActivity">
+
+    <include
+        layout="@layout/toobar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/scrollview_header">
+
+        <mxd.bdqn.com.wifi.view.CircleImageView
+            android:id="@+id/image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_pay_big"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view"
+            android:gravity="center">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_view"
+                android:layout_centerHorizontal="true"
+                android:text="当前余额："
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/text_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_view"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_view"
+                android:layout_centerHorizontal="true"
+                android:text="元"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <mxd.bdqn.com.wifi.view.ItemView
+        android:id="@+id/chong"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_vertical_margin"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/on_click_item"
+        app:is_driver="true"
+        app:left_img_src="@drawable/icon_pay_big"
+        app:left_text="充值"
+        app:right_img_src="@drawable/icon_next" />
+
+    <mxd.bdqn.com.wifi.view.ItemView
+        android:id="@+id/ti"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_vertical_margin"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/on_click_item"
+        app:is_driver="true"
+        app:left_img_src="@drawable/icon_pay_big"
+        app:left_text="提现"
+        app:right_img_src="@drawable/icon_next" />
+
+    <mxd.bdqn.com.wifi.view.ItemView
+        android:id="@+id/my_acount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_vertical_margin"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/on_click_item"
+        app:is_driver="true"
+        app:left_img_src="@drawable/icon_order"
+        app:left_text="我的账单"
+        app:right_img_src="@drawable/icon_next" />
+    <mxd.bdqn.com.wifi.view.ItemView
+        android:id="@+id/my_acount_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_vertical_margin"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/on_click_item"
+        app:is_driver="true"
+        app:left_img_src="@drawable/icon_order"
+        app:left_text="充值记录"
+        app:right_img_src="@drawable/icon_next" />
+    <mxd.bdqn.com.wifi.view.ItemView
+        android:id="@+id/my_wifi_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_vertical_margin"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/on_click_item"
+        app:is_driver="true"
+        app:left_img_src="@drawable/icon_order"
+        app:left_text="流量统计"
+        app:right_img_src="@drawable/icon_next" />
+</LinearLayout>

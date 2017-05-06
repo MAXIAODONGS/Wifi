@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:kgc="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/share"
+
+        android:title="分享"
+        kgc:showAsAction="never" />
+    <item
+        android:id="@+id/menu_option"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="发布"
+        kgc:showAsAction="always" />
+</menu>

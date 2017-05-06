@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">智慧校园</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="history">学校介绍</string>
+    <string name="activity">学校资讯</string>
+    <string name="info">在校信息</string>
+    <string name="service">校园服务</string>
+    <string name="run">校园跑腿</string>
+
+    <string name="add_attention">加关注</string>
+    <string name="user_post">职位：项目经理</string>.
+    <string name="user_book">年龄：25</string>
+    <string name="user_name">嘻哈夫子</string>
+    <string name="user_des">谁能像优乐美一样把我捧在手心，我就能让他的儿子长的更帅女儿长的更漂亮</string>
+    <string name="user_recommend_tip">TA推荐的好书</string>
+    <string name="signal_strength">信号强度</string>
+    <string name="security_level">安全性</string>
+    <string name="password">密码</string>
+    <string name="show_password">显示密码</string>
+    <string name="connect">连接</string>
+    <string name="disconnect">忘记</string>
+    <string name="cancel">取消</string>
+
+    <string name="conn_status">连接状态</string>
+    <string name="ip_address">IP地址</string>
+</resources>
